@@ -4,6 +4,23 @@ export default {
   darkMode: ["class"],
   content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
   prefix: "",
+  daisyui: {
+    themes: [
+      {
+        light: {
+          "primary": "#a78bfa",
+          "secondary": "#f472b6",
+          "accent": "#38bdf8",
+          "neutral": "#1f2937",
+          "base-100": "#ffffff",
+          "info": "#38bdf8",
+          "success": "#4ade80",
+          "warning": "#fbbf24",
+          "error": "#f87171",
+        },
+      },
+    ],
+  },
   theme: {
     container: {
       center: true,
@@ -87,5 +104,5 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("daisyui")],
 } satisfies Config;

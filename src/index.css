@@ -10,6 +10,11 @@ All colors MUST be HSL.
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
+    
+    /* Custom gradients */
+    --gradient-primary: linear-gradient(135deg, #a78bfa 0%, #f472b6 100%);
+    --gradient-secondary: linear-gradient(135deg, #38bdf8 0%, #a78bfa 100%);
+    --gradient-accent: linear-gradient(180deg, #fdf4ff 0%, #fae8ff 100%);
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
